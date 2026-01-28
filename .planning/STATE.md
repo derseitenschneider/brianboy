@@ -10,31 +10,31 @@ See: .planning/PROJECT.md (updated 2026-01-28)
 ## Current Position
 
 Phase: 1 of 4 (Foundation + Core Systems)
-Plan: 0 of 3 in current phase
-Status: Planned, ready to execute
-Last activity: 2026-01-28 — Phase 1 planned (3 plans in 3 waves)
+Plan: 1 of 3 in current phase
+Status: In progress
+Last activity: 2026-01-28 — Completed 01-01-PLAN.md (Astro + Tailwind foundation)
 
-Progress: [░░░░░░░░░░] 0%
+Progress: [█░░░░░░░░░] 8%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 0
-- Average duration: -
-- Total execution time: 0 hours
+- Total plans completed: 1
+- Average duration: 3 min
+- Total execution time: 3 min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 1. Foundation | 0/3 | - | - |
+| 1. Foundation | 1/3 | 3 min | 3 min |
 | 2. Layout | 0/3 | - | - |
 | 3. Content | 0/3 | - | - |
 | 4. SEO + Deploy | 0/3 | - | - |
 
 **Recent Trend:**
-- Last 5 plans: -
-- Trend: N/A (no data yet)
+- Last 5 plans: 3 min
+- Trend: N/A (insufficient data)
 
 *Updated after each plan completion*
 
@@ -49,6 +49,9 @@ Recent decisions affecting current work:
 - [Research]: Astro 5.x + Tailwind 4.x stack confirmed, CSS-only animations
 - [Research]: Build-time i18n (German root, English /en/) for SEO
 - [Plan]: Phase 1 split into 3 sequential plans (scaffold -> theme -> i18n)
+- [01-01]: Used @tailwindcss/vite instead of deprecated @astrojs/tailwind
+- [01-01]: CSS-first Tailwind config with @import and @theme directives
+- [01-01]: data-theme attribute for dark mode (vs class='dark')
 
 ### Pending Todos
 
@@ -60,6 +63,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-01-28
-Stopped at: Phase 1 planning complete
-Resume file: .planning/phases/01-foundation-core-systems/01-01-PLAN.md
+Last session: 2026-01-28 12:35
+Stopped at: Completed 01-01-PLAN.md
+Resume file: .planning/phases/01-foundation-core-systems/01-02-PLAN.md
