@@ -11,7 +11,7 @@ This roadmap delivers a bilingual personal portfolio website in 4 phases. We sta
 - Decimal phases (e.g., 2.1): Urgent insertions (marked with INSERTED)
 
 - [x] **Phase 1: Foundation + Core Systems** - Astro/Tailwind setup, theme toggle, i18n routing
-- [ ] **Phase 2: Layout + Design** - Responsive layout, typography, design tokens, animations
+- [x] **Phase 2: Layout + Design** - Responsive layout, typography, design tokens, animations
 - [ ] **Phase 3: Content** - Homepage, About page, all sections in both languages
 - [ ] **Phase 4: SEO + Deployment** - Meta tags, structured data, GitHub Actions, FTP deploy
 
@@ -47,8 +47,8 @@ Plans:
 **Plans**: 2 plans in 2 waves (sequential)
 
 Plans:
-- [ ] 02-01-PLAN.md — Design tokens, scroll-reveal CSS, Footer component
-- [ ] 02-02-PLAN.md — Header, Navigation, MobileMenu, BaseLayout integration
+- [x] 02-01-PLAN.md — Design tokens, scroll-reveal CSS, Footer component
+- [x] 02-02-PLAN.md — Header, Navigation, MobileMenu, BaseLayout integration
 
 ### Phase 3: Content
 **Goal**: Complete homepage and about page with all content sections in German and English
@@ -94,6 +94,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation + Core Systems | 3/3 | Complete | 2026-01-28 |
-| 2. Layout + Design | 0/2 | Not started | - |
+| 2. Layout + Design | 2/2 | Complete | 2026-01-28 |
 | 3. Content | 0/3 | Not started | - |
 | 4. SEO + Deployment | 0/3 | Not started | - |

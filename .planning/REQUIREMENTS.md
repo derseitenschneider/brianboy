@@ -103,11 +103,11 @@
 | REQ-009 | Phase 3 | Pending |
 | REQ-010 | Phase 3 | Pending |
 | REQ-011 | Phase 3 | Pending |
-| REQ-012 | Phase 2 | Pending |
+| REQ-012 | Phase 2 | Complete |
 | REQ-013 | Phase 4 | Pending |
-| REQ-014 | Phase 2 | Pending |
-| REQ-015 | Phase 2 | Pending |
-| REQ-016 | Phase 2 | Pending |
+| REQ-014 | Phase 2 | Complete |
+| REQ-015 | Phase 2 | Complete |
+| REQ-016 | Phase 2 | Complete |
 | REQ-017 | Phase 4 | Pending |
 | REQ-T01 | Phase 1 | Complete |
 | REQ-T02 | Phase 1 | Complete |
