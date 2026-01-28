@@ -44,12 +44,11 @@ Plans:
   3. Footer with secondary navigation is visible on all pages
   4. Mobile navigation works via hamburger menu
   5. Hover and scroll-reveal animations work, respecting reduced motion preference
-**Plans**: TBD
+**Plans**: 2 plans in 2 waves (sequential)
 
 Plans:
-- [ ] 02-01: Base layout, header, footer components
-- [ ] 02-02: Mobile navigation and responsive breakpoints
-- [ ] 02-03: Animation system (CSS + Intersection Observer)
+- [ ] 02-01-PLAN.md — Design tokens, scroll-reveal CSS, Footer component
+- [ ] 02-02-PLAN.md — Header, Navigation, MobileMenu, BaseLayout integration
 
 ### Phase 3: Content
 **Goal**: Complete homepage and about page with all content sections in German and English
@@ -94,7 +93,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation + Core Systems | 3/3 | ✓ Complete | 2026-01-28 |
-| 2. Layout + Design | 0/3 | Not started | - |
+| 1. Foundation + Core Systems | 3/3 | Complete | 2026-01-28 |
+| 2. Layout + Design | 0/2 | Not started | - |
 | 3. Content | 0/3 | Not started | - |
 | 4. SEO + Deployment | 0/3 | Not started | - |
