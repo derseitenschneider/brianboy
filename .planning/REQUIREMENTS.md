@@ -94,8 +94,8 @@
 |-------------|-------|--------|
 | REQ-001 | Phase 3 | Pending |
 | REQ-002 | Phase 3 | Pending |
-| REQ-003 | Phase 1 | Pending |
-| REQ-004 | Phase 1 | Pending |
+| REQ-003 | Phase 1 | Complete |
+| REQ-004 | Phase 1 | Complete |
 | REQ-005 | Phase 3 | Pending |
 | REQ-006 | Phase 3 | Pending |
 | REQ-007 | Phase 3 | Pending |
@@ -109,13 +109,13 @@
 | REQ-015 | Phase 2 | Pending |
 | REQ-016 | Phase 2 | Pending |
 | REQ-017 | Phase 4 | Pending |
-| REQ-T01 | Phase 1 | Pending |
-| REQ-T02 | Phase 1 | Pending |
-| REQ-T03 | Phase 1 | Pending |
-| REQ-T04 | Phase 1 | Pending |
-| REQ-T05 | Phase 1 | Pending |
-| REQ-T06 | Phase 1 | Pending |
-| REQ-T07 | Phase 1 | Pending |
+| REQ-T01 | Phase 1 | Complete |
+| REQ-T02 | Phase 1 | Complete |
+| REQ-T03 | Phase 1 | Complete |
+| REQ-T04 | Phase 1 | Complete |
+| REQ-T05 | Phase 1 | Complete |
+| REQ-T06 | Phase 1 | Complete |
+| REQ-T07 | Phase 1 | Complete |
 | REQ-T08 | Phase 4 | Pending |
 
 ---

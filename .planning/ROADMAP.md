@@ -10,7 +10,7 @@ This roadmap delivers a bilingual personal portfolio website in 4 phases. We sta
 - Integer phases (1, 2, 3, 4): Planned milestone work
 - Decimal phases (e.g., 2.1): Urgent insertions (marked with INSERTED)
 
-- [ ] **Phase 1: Foundation + Core Systems** - Astro/Tailwind setup, theme toggle, i18n routing
+- [x] **Phase 1: Foundation + Core Systems** - Astro/Tailwind setup, theme toggle, i18n routing
 - [ ] **Phase 2: Layout + Design** - Responsive layout, typography, design tokens, animations
 - [ ] **Phase 3: Content** - Homepage, About page, all sections in both languages
 - [ ] **Phase 4: SEO + Deployment** - Meta tags, structured data, GitHub Actions, FTP deploy
@@ -30,9 +30,9 @@ This roadmap delivers a bilingual personal portfolio website in 4 phases. We sta
 **Plans**: 3 plans in 3 waves (sequential)
 
 Plans:
-- [ ] 01-01-PLAN.md — Astro + Tailwind v4 project scaffold
-- [ ] 01-02-PLAN.md — Theme system (blocking script, toggle, persistence)
-- [ ] 01-03-PLAN.md — i18n routing (German root, English /en/, language switcher)
+- [x] 01-01-PLAN.md — Astro + Tailwind v4 project scaffold
+- [x] 01-02-PLAN.md — Theme system (blocking script, toggle, persistence)
+- [x] 01-03-PLAN.md — i18n routing (German root, English /en/, language switcher)
 
 ### Phase 2: Layout + Design
 **Goal**: Complete responsive layout with navigation, design tokens, and animation system
@@ -94,7 +94,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation + Core Systems | 0/3 | Planned | - |
+| 1. Foundation + Core Systems | 3/3 | ✓ Complete | 2026-01-28 |
 | 2. Layout + Design | 0/3 | Not started | - |
 | 3. Content | 0/3 | Not started | - |
 | 4. SEO + Deployment | 0/3 | Not started | - |
