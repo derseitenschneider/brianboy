@@ -1,9 +1,9 @@
 ---
 /**
- * German homepage (default language at /)
+ * English homepage (at /en/)
  */
-import BaseLayout from "../layouts/BaseLayout.astro";
-import { getLangFromUrl, useTranslations } from "../i18n/ui";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getLangFromUrl, useTranslations } from "../../i18n/ui";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -16,7 +16,7 @@ const t = useTranslations(lang);
       {t("hero.tagline")}
     </p>
     <p class="text-base">
-      Webseite wird aktualisiert. Bald mehr hier.
+      Website is being updated. More coming soon.
     </p>
   </main>
 </BaseLayout>
