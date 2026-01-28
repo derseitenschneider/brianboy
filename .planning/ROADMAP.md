@@ -27,12 +27,12 @@ This roadmap delivers a bilingual personal portfolio website in 4 phases. We sta
   3. User can visit `/` for German and `/en/` for English with language switcher working
   4. Theme preference persists across page navigation and browser sessions
   5. Build outputs static HTML files suitable for FTP deployment
-**Plans**: TBD
+**Plans**: 3 plans in 3 waves (sequential)
 
 Plans:
-- [ ] 01-01: Astro + Tailwind project scaffold
-- [ ] 01-02: Theme system (CSS variables, blocking script, toggle)
-- [ ] 01-03: i18n routing setup (German root, English /en/)
+- [ ] 01-01-PLAN.md — Astro + Tailwind v4 project scaffold
+- [ ] 01-02-PLAN.md — Theme system (blocking script, toggle, persistence)
+- [ ] 01-03-PLAN.md — i18n routing (German root, English /en/, language switcher)
 
 ### Phase 2: Layout + Design
 **Goal**: Complete responsive layout with navigation, design tokens, and animation system
@@ -94,7 +94,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation + Core Systems | 0/3 | Not started | - |
+| 1. Foundation + Core Systems | 0/3 | Planned | - |
 | 2. Layout + Design | 0/3 | Not started | - |
 | 3. Content | 0/3 | Not started | - |
 | 4. SEO + Deployment | 0/3 | Not started | - |

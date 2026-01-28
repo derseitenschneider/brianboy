@@ -11,8 +11,8 @@ See: .planning/PROJECT.md (updated 2026-01-28)
 
 Phase: 1 of 4 (Foundation + Core Systems)
 Plan: 0 of 3 in current phase
-Status: Ready to plan
-Last activity: 2026-01-28 — Roadmap created
+Status: Planned, ready to execute
+Last activity: 2026-01-28 — Phase 1 planned (3 plans in 3 waves)
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -48,6 +48,7 @@ Recent decisions affecting current work:
 - [Roadmap]: 4 phases for "quick" depth, research-suggested 7 phases compressed
 - [Research]: Astro 5.x + Tailwind 4.x stack confirmed, CSS-only animations
 - [Research]: Build-time i18n (German root, English /en/) for SEO
+- [Plan]: Phase 1 split into 3 sequential plans (scaffold -> theme -> i18n)
 
 ### Pending Todos
 
@@ -60,5 +61,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-01-28
-Stopped at: Roadmap creation complete
-Resume file: None
+Stopped at: Phase 1 planning complete
+Resume file: .planning/phases/01-foundation-core-systems/01-01-PLAN.md
