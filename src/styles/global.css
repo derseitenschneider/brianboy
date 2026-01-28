@@ -7,6 +7,7 @@
 @theme {
   /* Override/extend default colors */
   --color-accent-500: #0066cc;
+  --color-accent-600: #0052a3;
   --color-accent-400: #4da3ff;
 
   /* Custom font stack */
@@ -21,4 +22,41 @@ html {
 /* Prevent transitions on initial load */
 html:not([data-theme]) * {
   transition: none !important;
+}
+
+/* Scroll-reveal animation - CSS-only with proper fallbacks */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .scroll-reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: reveal-up linear forwards;
+      animation-timeline: view();
+      animation-range: entry 0% cover 40%;
+    }
+
+    @keyframes reveal-up {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+/* Fallback for browsers without animation-timeline support */
+@supports not (animation-timeline: view()) {
+  .scroll-reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
 }
