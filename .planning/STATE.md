@@ -5,35 +5,35 @@
 See: .planning/PROJECT.md (updated 2026-01-28)
 
 **Core value:** When someone searches "Brian Boy" they immediately understand who he is and feel confident reaching out
-**Current focus:** Phase 1 - Foundation + Core Systems
+**Current focus:** Phase 2 - Layout + Design System
 
 ## Current Position
 
-Phase: 1 of 4 (Foundation + Core Systems)
-Plan: 3 of 3 in current phase
-Status: Phase complete
-Last activity: 2026-01-28 — Completed 01-03-PLAN.md (Bilingual routing)
+Phase: 2 of 4 (Layout + Design System)
+Plan: 1 of 3 in current phase
+Status: In progress
+Last activity: 2026-01-28 — Completed 02-01-PLAN.md (CSS Animation and Footer)
 
-Progress: [███░░░░░░░] 25%
+Progress: [████░░░░░░] 33%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 3
-- Average duration: 2.7 min
-- Total execution time: 8 min
+- Total plans completed: 4
+- Average duration: 2.5 min
+- Total execution time: 10 min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 1. Foundation | 3/3 | 8 min | 2.7 min |
-| 2. Layout | 0/3 | - | - |
+| 2. Layout | 1/3 | 2 min | 2 min |
 | 3. Content | 0/3 | - | - |
 | 4. SEO + Deploy | 0/3 | - | - |
 
 **Recent Trend:**
-- Last 5 plans: 3 min, 2 min, 3 min
+- Last 5 plans: 3 min, 2 min, 3 min, 2 min
 - Trend: Stable
 
 *Updated after each plan completion*
@@ -58,6 +58,9 @@ Recent decisions affecting current work:
 - [01-03]: German at root (/) with prefixDefaultLocale: false
 - [01-03]: Translation strings centralized in src/i18n/ui.ts
 - [01-03]: URL-based language detection via getLangFromUrl helper
+- [02-01]: scroll-reveal class uses animation-timeline: view() with @supports fallback
+- [02-01]: Nested @media inside @supports for proper CSS fallback cascade
+- [02-01]: Footer uses getLocalizedPath for bilingual navigation links
 
 ### Pending Todos
 
@@ -69,6 +72,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-01-28 12:43
-Stopped at: Completed 01-03-PLAN.md (Phase 1 complete)
-Resume file: .planning/phases/02-layout/02-01-PLAN.md
+Last session: 2026-01-28 14:12
+Stopped at: Completed 02-01-PLAN.md (CSS Animation and Footer)
+Resume file: .planning/phases/02-layout-design/02-02-PLAN.md
