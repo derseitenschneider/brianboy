@@ -1,0 +1,46 @@
+---
+/**
+ * Navigation.astro
+ *
+ * Desktop navigation links with active state detection.
+ * Used within Header component, hidden on mobile (parent controls visibility).
+ */
+import { getLangFromUrl, useTranslations, getLocalizedPath } from "../i18n/ui";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const currentPath = Astro.url.pathname;
+
+const links = [
+  { href: "", label: t("nav.home") },
+  { href: "about", label: t("nav.about") },
+];
+---
+
+<nav class="flex items-center gap-6" aria-label="Main navigation">
+  {
+    links.map(({ href, label }) => {
+      const fullHref = getLocalizedPath(lang, href ? `/${href}` : "/");
+      // Handle trailing slash comparison
+      const isActive =
+        currentPath === fullHref ||
+        currentPath === `${fullHref}/` ||
+        (fullHref !== "/" && currentPath.startsWith(fullHref));
+
+      return (
+        <a
+          href={fullHref}
+          class:list={[
+            "text-sm font-medium transition-colors",
+            isActive
+              ? "text-accent-500 dark:text-accent-400"
+              : "text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100",
+          ]}
+          aria-current={isActive ? "page" : undefined}
+        >
+          {label}
+        </a>
+      );
+    })
+  }
+</nav>
