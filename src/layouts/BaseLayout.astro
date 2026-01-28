@@ -1,0 +1,35 @@
+---
+/**
+ * BaseLayout.astro
+ *
+ * Base HTML layout for all pages.
+ * Includes ThemeScript in head for flash-free theme detection.
+ */
+import "../styles/global.css";
+import ThemeScript from "../components/ThemeScript.astro";
+import ThemeToggle from "../components/ThemeToggle.astro";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+    <ThemeScript />
+  </head>
+  <body class="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-200">
+    <header class="flex justify-end p-4">
+      <ThemeToggle />
+    </header>
+    <slot />
+  </body>
+</html>
