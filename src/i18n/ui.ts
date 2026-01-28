@@ -18,6 +18,7 @@ export const ui = {
   de: {
     "nav.home": "Startseite",
     "nav.about": "Uber mich",
+    "nav.menu": "Menu",
     "theme.toggle": "Farbschema wechseln",
     "lang.switch": "Sprache wechseln",
     "site.title": "Brian Boy",
@@ -29,6 +30,7 @@ export const ui = {
   en: {
     "nav.home": "Home",
     "nav.about": "About",
+    "nav.menu": "Menu",
     "theme.toggle": "Toggle theme",
     "lang.switch": "Switch language",
     "site.title": "Brian Boy",

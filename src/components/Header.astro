@@ -1,0 +1,40 @@
+---
+/**
+ * Header.astro
+ *
+ * Sticky header with navigation, theme toggle, and language switch.
+ * Shows desktop navigation on md+ screens, mobile hamburger menu below.
+ * Uses backdrop blur for modern glass-morphism effect.
+ */
+import Navigation from "./Navigation.astro";
+import MobileMenu from "./MobileMenu.astro";
+import ThemeToggle from "./ThemeToggle.astro";
+import LanguageSwitch from "./LanguageSwitch.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/ui";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<header
+  class="sticky top-0 z-40 w-full bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo/Name -->
+      <a href="/" class="font-semibold text-lg">Brian</a>
+
+      <!-- Desktop Navigation (hidden on mobile) -->
+      <div class="hidden md:flex items-center gap-6">
+        <Navigation />
+      </div>
+
+      <!-- Right side: Language, Theme, Mobile Menu -->
+      <div class="flex items-center gap-2">
+        <LanguageSwitch />
+        <ThemeToggle aria-label={t("theme.toggle")} />
+        <MobileMenu />
+      </div>
+    </div>
+  </div>
+</header>
