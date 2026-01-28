@@ -4,10 +4,13 @@
  *
  * Base HTML layout for all pages.
  * Includes ThemeScript in head for flash-free theme detection.
+ * Supports i18n with dynamic lang attribute.
  */
 import "../styles/global.css";
 import ThemeScript from "../components/ThemeScript.astro";
 import ThemeToggle from "../components/ThemeToggle.astro";
+import LanguageSwitch from "../components/LanguageSwitch.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/ui";
 
 interface Props {
   title: string;
@@ -15,10 +18,13 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <!doctype html>
-<html lang="de">
+<html lang={lang}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -27,8 +33,9 @@ const { title, description } = Astro.props;
     <ThemeScript />
   </head>
   <body class="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-200">
-    <header class="flex justify-end p-4">
-      <ThemeToggle />
+    <header class="flex justify-end items-center gap-4 p-4">
+      <LanguageSwitch />
+      <ThemeToggle aria-label={t("theme.toggle")} />
     </header>
     <slot />
   </body>

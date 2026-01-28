@@ -1,0 +1,36 @@
+---
+/**
+ * LanguageSwitch.astro
+ *
+ * Language switcher component for bilingual navigation.
+ * Shows all available languages with active language highlighted.
+ */
+import { languages, getLangFromUrl, getLocalizedPath } from "../i18n/ui";
+
+const currentLang = getLangFromUrl(Astro.url);
+
+// Get pathname without language prefix for switching
+const pathname = Astro.url.pathname.replace(/^\/(de|en)/, "") || "/";
+---
+
+<nav aria-label="Language selection" class="flex gap-1">
+  {
+    Object.entries(languages).map(([code, label]) => {
+      const isActive = code === currentLang;
+      return (
+        <a
+          href={getLocalizedPath(code as keyof typeof languages, pathname)}
+          class:list={[
+            "px-2 py-1 rounded text-sm transition-colors",
+            isActive
+              ? "bg-gray-200 dark:bg-gray-700 font-medium"
+              : "hover:bg-gray-100 dark:hover:bg-gray-800",
+          ]}
+          aria-current={isActive ? "page" : undefined}
+        >
+          {label}
+        </a>
+      );
+    })
+  }
+</nav>
