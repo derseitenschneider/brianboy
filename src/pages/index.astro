@@ -1,24 +1,18 @@
 ---
-import "../styles/global.css";
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<!doctype html>
-<html lang="de">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Brian Boy</title>
-    <meta name="description" content="Tech-Unternehmer und Musiker aus der Schweiz" />
-  </head>
-  <body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen">
-    <main class="max-w-4xl mx-auto p-8">
-      <h1 class="text-4xl font-bold mb-4">Brian Boy</h1>
-      <p class="text-lg text-gray-600 dark:text-gray-400 mb-8">
-        Tech-Unternehmer und Musiker aus der Schweiz
-      </p>
-      <p class="text-base">
-        Webseite wird aktualisiert. Bald mehr hier.
-      </p>
-    </main>
-  </body>
-</html>
+<BaseLayout title="Brian Boy" description="Tech-Unternehmer und Musiker aus der Schweiz">
+  <main class="max-w-4xl mx-auto p-8">
+    <h1 class="text-4xl font-bold mb-4">Brian Boy</h1>
+    <p class="text-lg text-gray-600 dark:text-gray-400 mb-8">
+      Tech-Unternehmer und Musiker aus der Schweiz
+    </p>
+    <p class="text-base">
+      Webseite wird aktualisiert. Bald mehr hier.
+    </p>
+    <p class="text-sm text-gray-500 dark:text-gray-500 mt-8">
+      Theme-Umschalter oben rechts verwenden.
+    </p>
+  </main>
+</BaseLayout>
