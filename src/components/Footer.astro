@@ -1,0 +1,37 @@
+---
+/**
+ * Footer.astro
+ *
+ * Site footer with secondary navigation and copyright.
+ * Supports dark mode and i18n translations.
+ */
+import { getLangFromUrl, useTranslations, getLocalizedPath } from "../i18n/ui";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="border-t border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      <nav class="flex gap-6" aria-label="Footer navigation">
+        <a
+          href={getLocalizedPath(lang, "/")}
+          class="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+        >
+          {t("nav.home")}
+        </a>
+        <a
+          href={getLocalizedPath(lang, "/about")}
+          class="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+        >
+          {t("nav.about")}
+        </a>
+      </nav>
+      <p class="text-sm text-gray-500 dark:text-gray-500">
+        &copy; {currentYear} Brian. {t("footer.rights")}
+      </p>
+    </div>
+  </div>
+</footer>

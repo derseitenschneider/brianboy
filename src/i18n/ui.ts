@@ -24,6 +24,7 @@ export const ui = {
     "site.description": "Tech-Unternehmer und Musiker",
     "hero.greeting": "Hallo, ich bin",
     "hero.tagline": "Tech-Unternehmer & Musiker",
+    "footer.rights": "Alle Rechte vorbehalten.",
   },
   en: {
     "nav.home": "Home",
@@ -34,6 +35,7 @@ export const ui = {
     "site.description": "Tech entrepreneur and musician",
     "hero.greeting": "Hi, I'm",
     "hero.tagline": "Tech Entrepreneur & Musician",
+    "footer.rights": "All rights reserved.",
   },
 } as const;
 
