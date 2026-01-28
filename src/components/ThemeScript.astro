@@ -1,0 +1,42 @@
+---
+/**
+ * ThemeScript.astro
+ *
+ * Blocking inline script for flash-free theme detection.
+ * MUST be placed in <head> BEFORE any CSS to prevent FOUC.
+ * Uses is:inline to prevent Astro from bundling/deferring.
+ */
+---
+
+<script is:inline>
+(function() {
+  const root = document.documentElement;
+
+  function getTheme() {
+    const stored = localStorage.getItem('theme');
+    if (stored === 'dark' || stored === 'light') return stored;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  function setTheme(theme) {
+    root.setAttribute('data-theme', theme);
+    if (theme === 'dark' || theme === 'light') {
+      localStorage.setItem('theme', theme);
+    }
+  }
+
+  // Apply theme immediately (blocking)
+  setTheme(getTheme());
+
+  // Listen for system preference changes (only when no stored preference)
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+    if (!localStorage.getItem('theme')) {
+      setTheme(e.matches ? 'dark' : 'light');
+    }
+  });
+
+  // Expose to window for ThemeToggle component
+  window.setTheme = setTheme;
+  window.getTheme = getTheme;
+})();
+</script>
