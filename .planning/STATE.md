@@ -10,31 +10,31 @@ See: .planning/PROJECT.md (updated 2026-01-28)
 ## Current Position
 
 Phase: 1 of 4 (Foundation + Core Systems)
-Plan: 1 of 3 in current phase
+Plan: 2 of 3 in current phase
 Status: In progress
-Last activity: 2026-01-28 — Completed 01-01-PLAN.md (Astro + Tailwind foundation)
+Last activity: 2026-01-28 — Completed 01-02-PLAN.md (Theme toggle system)
 
-Progress: [█░░░░░░░░░] 8%
+Progress: [██░░░░░░░░] 17%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 1
-- Average duration: 3 min
-- Total execution time: 3 min
+- Total plans completed: 2
+- Average duration: 2.5 min
+- Total execution time: 5 min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 1. Foundation | 1/3 | 3 min | 3 min |
+| 1. Foundation | 2/3 | 5 min | 2.5 min |
 | 2. Layout | 0/3 | - | - |
 | 3. Content | 0/3 | - | - |
 | 4. SEO + Deploy | 0/3 | - | - |
 
 **Recent Trend:**
-- Last 5 plans: 3 min
-- Trend: N/A (insufficient data)
+- Last 5 plans: 3 min, 2 min
+- Trend: Stable
 
 *Updated after each plan completion*
 
@@ -52,6 +52,9 @@ Recent decisions affecting current work:
 - [01-01]: Used @tailwindcss/vite instead of deprecated @astrojs/tailwind
 - [01-01]: CSS-first Tailwind config with @import and @theme directives
 - [01-01]: data-theme attribute for dark mode (vs class='dark')
+- [01-02]: ThemeScript uses is:inline to prevent Astro bundling/deferring
+- [01-02]: Theme functions exposed on window for component access
+- [01-02]: Icons toggle via Tailwind dark: classes (hidden dark:block pattern)
 
 ### Pending Todos
 
@@ -63,6 +66,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-01-28 12:35
-Stopped at: Completed 01-01-PLAN.md
-Resume file: .planning/phases/01-foundation-core-systems/01-02-PLAN.md
+Last session: 2026-01-28 12:38
+Stopped at: Completed 01-02-PLAN.md
+Resume file: .planning/phases/01-foundation-core-systems/01-03-PLAN.md
