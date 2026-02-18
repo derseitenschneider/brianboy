@@ -3,7 +3,6 @@
  * Navigation.astro
  *
  * Desktop navigation links with active state detection.
- * Used within Header component, hidden on mobile (parent controls visibility).
  */
 import { getLangFromUrl, useTranslations, getLocalizedPath } from "../i18n/ui";
 
@@ -17,11 +16,10 @@ const links = [
 ];
 ---
 
-<nav class="flex items-center gap-6" aria-label="Main navigation">
+<nav class="flex items-center gap-8" aria-label="Main navigation">
   {
     links.map(({ href, label }) => {
       const fullHref = getLocalizedPath(lang, href ? `/${href}` : "/");
-      // Handle trailing slash comparison
       const isActive =
         currentPath === fullHref ||
         currentPath === `${fullHref}/` ||
@@ -31,10 +29,10 @@ const links = [
         <a
           href={fullHref}
           class:list={[
-            "text-sm font-medium transition-colors",
+            "text-sm tracking-wide uppercase transition-colors",
             isActive
-              ? "text-accent-500 dark:text-accent-400"
-              : "text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100",
+              ? "text-accent-500 font-medium"
+              : "text-ink-muted dark:text-warm-200/60 hover:text-ink dark:hover:text-warm-200",
           ]}
           aria-current={isActive ? "page" : undefined}
         >

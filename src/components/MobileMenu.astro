@@ -3,8 +3,6 @@
  * MobileMenu.astro
  *
  * Mobile hamburger menu with toggle functionality.
- * Shows on screens below md breakpoint (Tailwind <768px).
- * Includes proper ARIA attributes for accessibility.
  */
 import { getLangFromUrl, useTranslations, getLocalizedPath } from "../i18n/ui";
 
@@ -24,9 +22,8 @@ const links = [
     aria-expanded="false"
     aria-controls="mobile-menu"
     aria-label={t("nav.menu")}
-    class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+    class="p-2 rounded-lg hover:bg-warm-200/50 dark:hover:bg-warm-800/50 transition-colors"
   >
-    <!-- Hamburger icon (visible when menu closed) -->
     <svg
       id="menu-icon-open"
       class="w-5 h-5"
@@ -42,7 +39,6 @@ const links = [
         d="M4 6h16M4 12h16M4 18h16"
       />
     </svg>
-    <!-- X icon (visible when menu open) -->
     <svg
       id="menu-icon-close"
       class="hidden w-5 h-5"
@@ -62,14 +58,14 @@ const links = [
 
   <nav
     id="mobile-menu"
-    class="hidden absolute top-full left-0 right-0 z-50 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 shadow-lg"
+    class="hidden absolute top-full left-0 right-0 z-50 bg-cream dark:bg-warm-950 border-b border-warm-200/60 dark:border-warm-800/40 shadow-lg"
   >
-    <div class="px-4 py-3 space-y-1">
+    <div class="px-6 py-3 space-y-1">
       {
         links.map(({ href, label }) => (
           <a
             href={getLocalizedPath(lang, href ? `/${href}` : "/")}
-            class="block px-3 py-2 rounded-lg text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+            class="block px-3 py-2 rounded-lg text-base font-medium text-ink-light dark:text-warm-200/70 hover:bg-warm-200/50 dark:hover:bg-warm-800/50 hover:text-ink dark:hover:text-warm-200 transition-colors"
           >
             {label}
           </a>
@@ -98,7 +94,6 @@ const links = [
     toggleMenu();
   });
 
-  // Close menu when clicking outside
   document.addEventListener("click", (e) => {
     const target = e.target as Node;
     if (

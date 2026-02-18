@@ -2,8 +2,7 @@
 /**
  * WorkSection.astro
  *
- * Combined work section showing Morntag, Eleno, and Pressdify.
- * Card-based grid layout. Reads language from URL.
+ * Work showcase with gradient-bordered cards and staggered animations.
  */
 import { getLangFromUrl, useTranslations } from "../i18n/ui";
 
@@ -16,41 +15,57 @@ const entries = [
     role: t("work.morntag.role"),
     description: t("work.morntag.description"),
     url: t("work.morntag.url"),
+    number: "01",
   },
   {
     name: t("work.eleno.name"),
     role: t("work.eleno.role"),
     description: t("work.eleno.description"),
     url: t("work.eleno.url"),
+    number: "02",
   },
   {
     name: t("work.pressdify.name"),
     role: t("work.pressdify.role"),
     description: t("work.pressdify.description"),
     url: t("work.pressdify.url"),
+    number: "03",
   },
 ];
 ---
 
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 scroll-reveal">
-  <h2 class="text-3xl font-bold mb-8">{t("work.title")}</h2>
+<section class="max-w-6xl mx-auto px-6 lg:px-8 py-16 md:py-28 scroll-reveal">
+  <div class="flex items-center gap-4 mb-12">
+    <h2 class="font-display text-3xl md:text-4xl font-medium tracking-tight">{t("work.title")}</h2>
+    <div class="flex-1 h-px bg-warm-200 dark:bg-warm-800"></div>
+  </div>
+
   <div class="grid md:grid-cols-3 gap-6">
-    {entries.map((entry) => (
+    {entries.map((entry, i) => (
       <a
         href={entry.url}
         target="_blank"
         rel="noopener noreferrer"
-        class="group block border border-gray-200 dark:border-gray-700 rounded-lg p-6 hover:shadow-lg transition-shadow"
+        class="card-glow group block p-6 border border-warm-200/80 dark:border-warm-800/60"
       >
-        <h3 class="text-xl font-semibold mb-1 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+        <span class="font-display text-4xl font-light text-warm-200 dark:text-warm-800 block mb-4 transition-colors group-hover:text-accent-400">
+          {entry.number}
+        </span>
+        <h3 class="text-xl font-semibold mb-1 transition-colors group-hover:text-accent-600 dark:group-hover:text-accent-400">
           {entry.name}
         </h3>
-        <span class="inline-block text-sm text-accent-600 dark:text-accent-400 mb-3">
+        <span class="inline-block text-sm text-accent-500 dark:text-accent-400 mb-3 font-medium uppercase tracking-wider">
           {entry.role}
         </span>
-        <p class="text-gray-600 dark:text-gray-400">
+        <p class="text-ink-light dark:text-warm-200/60 leading-relaxed">
           {entry.description}
         </p>
+        <div class="flex items-center gap-1 mt-4 text-sm text-ink-muted dark:text-warm-200/40 group-hover:text-accent-500 transition-colors">
+          <span class="tracking-wide">{lang === "de" ? "Ansehen" : "View"}</span>
+          <svg class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </div>
       </a>
     ))}
   </div>

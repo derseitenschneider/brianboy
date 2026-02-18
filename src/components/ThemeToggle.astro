@@ -3,7 +3,6 @@
  * ThemeToggle.astro
  *
  * Accessible theme toggle button with sun/moon icons.
- * Uses window.setTheme() exposed by ThemeScript.
  */
 interface Props {
   "aria-label"?: string;
@@ -16,9 +15,8 @@ const ariaLabel = Astro.props["aria-label"] ?? "Toggle theme";
   id="theme-toggle"
   type="button"
   aria-label={ariaLabel}
-  class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+  class="p-2 rounded-lg hover:bg-warm-200/50 dark:hover:bg-warm-800/50 transition-colors"
 >
-  <!-- Sun icon (visible in dark mode, click to switch to light) -->
   <svg
     class="hidden dark:block w-5 h-5"
     fill="currentColor"
@@ -31,7 +29,6 @@ const ariaLabel = Astro.props["aria-label"] ?? "Toggle theme";
       clip-rule="evenodd"
     />
   </svg>
-  <!-- Moon icon (visible in light mode, click to switch to dark) -->
   <svg
     class="block dark:hidden w-5 h-5"
     fill="currentColor"

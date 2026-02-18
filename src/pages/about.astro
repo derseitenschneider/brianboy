@@ -3,8 +3,7 @@
  * German about page (/about)
  *
  * Flowing narrative covering Brian's arc from music to tech.
- * No section headings — one continuous story.
- * Headshot photo displayed at the top.
+ * Drop cap on first paragraph, decorative dividers for rhythm.
  */
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { Image } from "astro:assets";
@@ -16,22 +15,48 @@ const t = useTranslations(lang);
 ---
 
 <BaseLayout title={`${t("about.title")} — Brian Boy`} description={t("about.meta")}>
-  <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 scroll-reveal">
-    <div class="flex flex-col items-center mb-12">
-      <Image
-        src={headshot}
-        alt="Brian Boy"
-        width={200}
-        height={200}
-        class="rounded-full"
-      />
+  <article class="max-w-3xl mx-auto px-6 lg:px-8 pt-16 md:pt-24 pb-20 md:pb-32">
+    <div class="flex flex-col items-center mb-16 animate-fade-up">
+      <div class="relative">
+        <div class="absolute -inset-4 bg-gradient-to-br from-accent-400/15 via-transparent to-accent-600/10 rounded-3xl blur-2xl"></div>
+        <Image
+          src={headshot}
+          alt="Brian Boy"
+          width={220}
+          height={220}
+          class="relative rounded-2xl shadow-lg"
+        />
+      </div>
     </div>
-    <div class="space-y-6">
-      <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">{t("about.p1")}</p>
-      <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">{t("about.p2")}</p>
-      <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">{t("about.p3")}</p>
-      <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">{t("about.p4")}</p>
-      <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">{t("about.p5")}</p>
+
+    <div class="space-y-8">
+      <p class="drop-cap text-lg leading-relaxed text-ink-light dark:text-warm-200/70 animate-fade-up delay-1">
+        {t("about.p1")}
+      </p>
+
+      <div class="flex justify-center py-2 animate-fade-up delay-2">
+        <div class="divider-accent"></div>
+      </div>
+
+      <p class="text-lg leading-relaxed text-ink-light dark:text-warm-200/70 animate-fade-up delay-2">
+        {t("about.p2")}
+      </p>
+
+      <p class="text-lg leading-relaxed text-ink-light dark:text-warm-200/70 scroll-reveal">
+        {t("about.p3")}
+      </p>
+
+      <p class="text-lg leading-relaxed text-ink-light dark:text-warm-200/70 scroll-reveal">
+        {t("about.p4")}
+      </p>
+
+      <div class="flex justify-center py-2 scroll-reveal">
+        <div class="divider-accent"></div>
+      </div>
+
+      <p class="font-display text-xl md:text-2xl leading-relaxed text-ink dark:text-warm-200 font-medium tracking-tight scroll-reveal">
+        {t("about.p5")}
+      </p>
     </div>
   </article>
 </BaseLayout>

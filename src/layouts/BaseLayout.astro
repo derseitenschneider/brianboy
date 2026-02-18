@@ -30,9 +30,15 @@ const lang = getLangFromUrl(Astro.url);
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&display=swap"
+      rel="stylesheet"
+    />
     <ThemeScript />
   </head>
-  <body class="flex flex-col min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans">
+  <body class="flex flex-col min-h-screen bg-cream dark:bg-warm-950 text-ink dark:text-warm-200 font-sans">
     <Header />
     <main class="flex-1">
       <slot />
