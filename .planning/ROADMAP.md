@@ -61,12 +61,12 @@ Plans:
   4. Social links (GitHub, LinkedIn, Twitter/X, Instagram) are accessible
   5. Email contact works via mailto link
   6. All content exists in both German and English with proper translations
-**Plans**: TBD
+**Plans**: 3 plans in 2 waves (03-01 sequential, 03-02 + 03-03 parallel)
 
 Plans:
-- [ ] 03-01: Hero and projects sections
-- [ ] 03-02: About page with bio components
-- [ ] 03-03: Contact section and social links
+- [ ] 03-01-PLAN.md — Translation strings, Hero component, WorkSection component, homepage rewrite
+- [ ] 03-02-PLAN.md — About page with flowing bio narrative in both languages
+- [ ] 03-03-PLAN.md — Footer social icon links and email mailto
 
 ### Phase 4: SEO + Deployment
 **Goal**: Production-ready site with proper SEO and automated deployment
