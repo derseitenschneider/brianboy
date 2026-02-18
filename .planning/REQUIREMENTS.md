@@ -92,17 +92,17 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| REQ-001 | Phase 3 | Pending |
+| REQ-001 | Phase 3 | Complete |
 | REQ-002 | Phase 3 | Pending |
 | REQ-003 | Phase 1 | Complete |
 | REQ-004 | Phase 1 | Complete |
-| REQ-005 | Phase 3 | Pending |
-| REQ-006 | Phase 3 | Pending |
+| REQ-005 | Phase 3 | Complete |
+| REQ-006 | Phase 3 | Complete |
 | REQ-007 | Phase 3 | Pending |
 | REQ-008 | Phase 3 | Pending |
 | REQ-009 | Phase 3 | Pending |
-| REQ-010 | Phase 3 | Pending |
-| REQ-011 | Phase 3 | Pending |
+| REQ-010 | Phase 3 | Complete |
+| REQ-011 | Phase 3 | Complete |
 | REQ-012 | Phase 2 | Complete |
 | REQ-013 | Phase 4 | Pending |
 | REQ-014 | Phase 2 | Complete |

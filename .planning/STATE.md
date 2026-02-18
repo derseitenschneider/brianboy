@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-01-28)
 
 **Core value:** When someone searches "Brian Boy" they immediately understand who he is and feel confident reaching out
-**Current focus:** Phase 2 - Layout + Design System (COMPLETE)
+**Current focus:** Phase 3 - Content (IN PROGRESS)
 
 ## Current Position
 
-Phase: 2 of 4 (Layout + Design System)
-Plan: 2 of 2 in current phase
-Status: Phase complete
-Last activity: 2026-01-28 — Completed 02-02-PLAN.md (Header and Layout)
+Phase: 3 of 4 (Content)
+Plan: 1 of 3 in current phase
+Status: Plan 01 complete
+Last activity: 2026-02-18 — Completed 03-01-PLAN.md (Homepage Hero + Work Section)
 
-Progress: [█████░░░░░] 45%
+Progress: [██████░░░░] 55%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 5
-- Average duration: 2.6 min
-- Total execution time: 13 min
+- Total plans completed: 6
+- Average duration: 2.5 min
+- Total execution time: 15 min
 
 **By Phase:**
 
@@ -29,11 +29,11 @@ Progress: [█████░░░░░] 45%
 |-------|-------|-------|----------|
 | 1. Foundation | 3/3 | 8 min | 2.7 min |
 | 2. Layout | 2/2 | 5 min | 2.5 min |
-| 3. Content | 0/3 | - | - |
+| 3. Content | 1/3 | 2 min | 2 min |
 | 4. SEO + Deploy | 0/3 | - | - |
 
 **Recent Trend:**
-- Last 5 plans: 3 min, 2 min, 3 min, 2 min, 3 min
+- Last 5 plans: 2 min, 3 min, 2 min, 3 min, 2 min
 - Trend: Stable
 
 *Updated after each plan completion*
@@ -65,6 +65,9 @@ Recent decisions affecting current work:
 - [02-02]: Header uses bg-white/95 with backdrop-blur-sm for glass effect
 - [02-02]: MobileMenu uses document click listener for close-on-outside-click
 - [02-02]: BaseLayout uses flex flex-col min-h-screen for sticky footer
+- [03-01]: Work cards as clickable anchors with group hover for better UX
+- [03-01]: Pressdify gets "Projekt" role label for visual consistency across 3 cards
+- [03-01]: Hero CTA uses bg-accent-600 matching site accent color
 
 ### Pending Todos
 
@@ -76,6 +79,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-01-28 14:18
-Stopped at: Completed 02-02-PLAN.md (Header and Layout)
-Resume file: None - Phase 2 complete, ready for Phase 3
+Last session: 2026-02-18 11:53
+Stopped at: Completed 03-01-PLAN.md (Homepage Hero + Work Section)
+Resume file: None - ready for 03-02-PLAN.md
