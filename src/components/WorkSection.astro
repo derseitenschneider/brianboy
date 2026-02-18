@@ -1,0 +1,57 @@
+---
+/**
+ * WorkSection.astro
+ *
+ * Combined work section showing Morntag, Eleno, and Pressdify.
+ * Card-based grid layout. Reads language from URL.
+ */
+import { getLangFromUrl, useTranslations } from "../i18n/ui";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const entries = [
+  {
+    name: t("work.morntag.name"),
+    role: t("work.morntag.role"),
+    description: t("work.morntag.description"),
+    url: t("work.morntag.url"),
+  },
+  {
+    name: t("work.eleno.name"),
+    role: t("work.eleno.role"),
+    description: t("work.eleno.description"),
+    url: t("work.eleno.url"),
+  },
+  {
+    name: t("work.pressdify.name"),
+    role: t("work.pressdify.role"),
+    description: t("work.pressdify.description"),
+    url: t("work.pressdify.url"),
+  },
+];
+---
+
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 scroll-reveal">
+  <h2 class="text-3xl font-bold mb-8">{t("work.title")}</h2>
+  <div class="grid md:grid-cols-3 gap-6">
+    {entries.map((entry) => (
+      <a
+        href={entry.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group block border border-gray-200 dark:border-gray-700 rounded-lg p-6 hover:shadow-lg transition-shadow"
+      >
+        <h3 class="text-xl font-semibold mb-1 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+          {entry.name}
+        </h3>
+        <span class="inline-block text-sm text-accent-600 dark:text-accent-400 mb-3">
+          {entry.role}
+        </span>
+        <p class="text-gray-600 dark:text-gray-400">
+          {entry.description}
+        </p>
+      </a>
+    ))}
+  </div>
+</section>

@@ -3,6 +3,8 @@
  * German homepage (default language at /)
  */
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero.astro";
+import WorkSection from "../components/WorkSection.astro";
 import { getLangFromUrl, useTranslations } from "../i18n/ui";
 
 const lang = getLangFromUrl(Astro.url);
@@ -10,13 +12,6 @@ const t = useTranslations(lang);
 ---
 
 <BaseLayout title={t("site.title")} description={t("site.description")}>
-  <main class="max-w-4xl mx-auto p-8">
-    <h1 class="text-4xl font-bold mb-4">{t("hero.greeting")} Brian Boy</h1>
-    <p class="text-lg text-gray-600 dark:text-gray-400 mb-8">
-      {t("hero.tagline")}
-    </p>
-    <p class="text-base">
-      Webseite wird aktualisiert. Bald mehr hier.
-    </p>
-  </main>
+  <Hero />
+  <WorkSection />
 </BaseLayout>
