@@ -1,0 +1,37 @@
+---
+/**
+ * English about page (/en/about)
+ *
+ * Flowing narrative covering Brian's arc from music to tech.
+ * No section headings — one continuous story.
+ * Headshot photo displayed at the top.
+ */
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
+import headshot from "../../assets/images/headshot.jpg";
+import { getLangFromUrl, useTranslations } from "../../i18n/ui";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<BaseLayout title={`${t("about.title")} — Brian Boy`} description={t("about.meta")}>
+  <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 scroll-reveal">
+    <div class="flex flex-col items-center mb-12">
+      <Image
+        src={headshot}
+        alt="Brian Boy"
+        width={200}
+        height={200}
+        class="rounded-full"
+      />
+    </div>
+    <div class="space-y-6">
+      <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">{t("about.p1")}</p>
+      <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">{t("about.p2")}</p>
+      <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">{t("about.p3")}</p>
+      <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">{t("about.p4")}</p>
+      <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">{t("about.p5")}</p>
+    </div>
+  </article>
+</BaseLayout>
