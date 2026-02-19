@@ -13,13 +13,13 @@
   --color-warm-900: #131110;
   --color-warm-950: #0c0a09;
 
-  --color-accent-400: #f59e0b;
-  --color-accent-500: #d97706;
-  --color-accent-600: #b45309;
+  --color-accent-400: #c2748a;
+  --color-accent-500: #9f344e;
+  --color-accent-600: #7c2540;
 
   --color-ink: #1a1a1a;
-  --color-ink-light: #4a4541;
-  --color-ink-muted: #8c8279;
+  --color-ink-light: #55504b;
+  --color-ink-muted: #78716c;
 
   --font-display: "Fraunces", "Georgia", serif;
   --font-sans: "DM Sans", "Helvetica Neue", sans-serif;
@@ -144,7 +144,7 @@ body::before {
   inset: 0;
   border-radius: 1rem;
   padding: 1px;
-  background: linear-gradient(135deg, transparent 40%, rgba(217, 119, 6, 0.3) 100%);
+  background: linear-gradient(135deg, transparent 40%, rgba(159, 52, 78, 0.3) 100%);
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask-composite: exclude;
   opacity: 0;
@@ -172,18 +172,18 @@ body::before {
   line-height: 0.8;
   margin-right: 0.08em;
   margin-top: 0.05em;
-  color: #d97706;
+  color: #7c2540;
   font-weight: 500;
 }
 
 [data-theme="dark"] .drop-cap::first-letter {
-  color: #f59e0b;
+  color: #c2748a;
 }
 
 /* Decorative divider */
 .divider-accent {
   width: 3rem;
   height: 3px;
-  background: linear-gradient(90deg, #d97706, #f59e0b);
+  background: linear-gradient(90deg, #7c2540, #c2748a);
   border-radius: 2px;
 }

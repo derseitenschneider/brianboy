@@ -29,41 +29,41 @@ export const ui = {
 
     // Phase 3: Hero section
     "hero.intro":
-      "Tech-Unternehmer und ehemaliger Berufsmusiker aus der Schweiz. Ich baue digitale Produkte, die Menschen im Alltag helfen \u2014 von Webanwendungen bis hin zu SaaS-Plattformen.",
+      "Tech-Unternehmer und Musiker aus der Schweiz. Ich baue digitale Produkte, die Menschen im Alltag helfen \u2014 von Webanwendungen bis hin zu SaaS-Plattformen.",
     "hero.cta": "Kontakt aufnehmen",
 
     // Phase 3: Work section
     "work.title": "Arbeit",
-    "work.morntag.name": "Morntag",
+    "work.morntag.name": "morntag",
     "work.morntag.role": "Mitinhaber",
     "work.morntag.description":
-      "Webentwicklungs-Agentur, die massgeschneiderte digitale Produkte und Websites f\u00FCr Unternehmen realisiert.",
+      "Content-First-Agentur f\u00FCr Publisher und Unternehmen \u2014 WordPress-L\u00F6sungen, Webshops und Multi-Channel-Publishing.",
     "work.morntag.url": "https://morntag.com",
     "work.eleno.name": "Eleno",
     "work.eleno.role": "Gr\u00FCnder",
     "work.eleno.description":
       "Musikunterrichts-Plattform, die Lehrpersonen bei der Planung, Verwaltung und Durchf\u00FChrung ihres Unterrichts unterst\u00FCtzt.",
-    "work.eleno.url": "https://eleno.app",
-    "work.pressdify.name": "Pressdify",
-    "work.pressdify.role": "Projekt",
+    "work.eleno.url": "https://eleno.net",
+    "work.pressdify.name": "pressdify",
+    "work.pressdify.role": "morntag-Projekt",
     "work.pressdify.description":
-      "Tool, das WordPress-Websites in schnelle, sichere statische Seiten verwandelt.",
+      "WordPress-Plugin, das Blogbeiträge und Custom Post Types in professionelle PDFs verwandelt — mit PrintCSS, in Sekunden.",
     "work.pressdify.url": "https://pressdify.com",
 
     // Phase 3: About page
     "about.title": "\u00DCber mich",
     "about.meta":
-      "Brian Boy \u2014 vom Berufsmusiker zum Tech-Unternehmer. Die Geschichte hinter Morntag, Eleno und Pressdify.",
+      "Brian Boy \u2014 Musiker und Tech-Unternehmer. Die Geschichte hinter morntag, Eleno und pressdify.",
     "about.p1":
-      "Musik war mein erster Beruf und f\u00FCr lange Zeit meine ganze Welt. Nach dem Studium an der Musikhochschule spielte ich als Berufsmusiker in verschiedenen Formationen \u2014 unter anderem als festes Mitglied der Schweizer Band Halunke. Wir tourten durch die Deutschschweiz, spielten auf Festivals und nahmen Alben auf. Die B\u00FChne war mein Zuhause, und ich konnte mir nichts anderes vorstellen.",
+      "Angefangen hat alles mit der Musik \u2014 Jazzgitarre-Bachelorstudium und Master in Musikp\u00E4dagogik an der ZHdK, dann Jahre als Berufsmusiker in verschiedenen Formationen. Seit 2023 spiele ich bei der Schweizer Band Halunke, daneben bei weiteren Projekten, Ch\u00F6ren und als Sideman.",
     "about.p2":
       "Dann kam 2020. Als COVID die Live-Musikszene zum Stillstand brachte, fiel praktisch \u00FCber Nacht alles weg \u2014 Konzerte, Touren, Eink\u00FCnfte. Statt abzuwarten, begann ich, mich selbst\u00E4ndig in die Welt der Softwareentwicklung einzuarbeiten. Was mit Online-Tutorials und kleinen Projekten anfing, wurde schnell zu einer echten Leidenschaft.",
     "about.p3":
-      "Zusammen mit einem Partner gr\u00FCndete ich Morntag, eine Webentwicklungs-Agentur. Wir realisierten Websites und digitale Produkte f\u00FCr Unternehmen aller Gr\u00F6ssen. Durch die Arbeit mit verschiedenen Kunden lernte ich nicht nur das Handwerk, sondern auch, wie man Ideen in funktionierende Produkte verwandelt.",
+      "Seit 2022 bin ich Mitinhaber von morntag, einer Content-First-Agentur aus Brugg. Wir helfen Publishern und Unternehmen mit WordPress-L\u00F6sungen, Webshops und Multi-Channel-Publishing \u2014 damit die richtigen Inhalte zur richtigen Zeit im richtigen Kanal ankommen.",
     "about.p4":
       "Aus meiner eigenen Erfahrung als Musiklehrer heraus entstand Eleno \u2014 eine SaaS-Plattform, die Musiklehrpersonen bei der Unterrichtsplanung und -verwaltung unterst\u00FCtzt. Was als pers\u00F6nliches Problem begann, wurde zu einem Produkt, das heute von Lehrpersonen in der ganzen Schweiz genutzt wird.",
     "about.p5":
-      "Heute bewege ich mich an der Schnittstelle von Technologie und Kreativit\u00E4t. Ob bei Morntag, Eleno oder mit Nebenprojekten wie Pressdify \u2014 ich baue Dinge, die Menschen im Alltag helfen. Die Musik bleibt ein Teil von mir, aber Code ist meine neue B\u00FChne.",
+      "Heute bewege ich mich zwischen Code und Musik, zwischen Agenturalltag und B\u00FChne. Ich baue digitale Produkte, die Menschen im Alltag helfen \u2014 und stehe abends auch mal auf der B\u00FChne.",
 
     // Phase 3: Footer additions
     "footer.email.label": "E-Mail",
@@ -82,41 +82,41 @@ export const ui = {
 
     // Phase 3: Hero section
     "hero.intro":
-      "Tech entrepreneur and former professional musician from Switzerland. I build digital products that make people's lives easier \u2014 from web applications to SaaS platforms.",
+      "Tech entrepreneur and musician from Switzerland. I build digital products that make people's lives easier \u2014 from web applications to SaaS platforms.",
     "hero.cta": "Get in touch",
 
     // Phase 3: Work section
     "work.title": "Work",
-    "work.morntag.name": "Morntag",
+    "work.morntag.name": "morntag",
     "work.morntag.role": "Co-Owner",
     "work.morntag.description":
-      "Web development agency crafting custom digital products and websites for businesses.",
+      "Content-first agency for publishers and businesses \u2014 WordPress solutions, webshops, and multi-channel publishing.",
     "work.morntag.url": "https://morntag.com",
     "work.eleno.name": "Eleno",
     "work.eleno.role": "Founder",
     "work.eleno.description":
       "Music education platform that helps teachers plan, manage, and run their lessons.",
-    "work.eleno.url": "https://eleno.app",
-    "work.pressdify.name": "Pressdify",
-    "work.pressdify.role": "Project",
+    "work.eleno.url": "https://eleno.net",
+    "work.pressdify.name": "pressdify",
+    "work.pressdify.role": "morntag Project",
     "work.pressdify.description":
-      "Tool that transforms WordPress sites into fast, secure static pages.",
+      "WordPress plugin that turns blog posts and custom post types into professional PDFs — powered by PrintCSS, in seconds.",
     "work.pressdify.url": "https://pressdify.com",
 
     // Phase 3: About page
     "about.title": "About",
     "about.meta":
-      "Brian Boy \u2014 from professional musician to tech entrepreneur. The story behind Morntag, Eleno, and Pressdify.",
+      "Brian Boy \u2014 musician and tech entrepreneur. The story behind morntag, Eleno, and pressdify.",
     "about.p1":
-      "Music was my first career and for a long time, my entire world. After studying at the conservatory, I played as a professional musician in various ensembles \u2014 including as a permanent member of the Swiss band Halunke. We toured across German-speaking Switzerland, played festivals, and recorded albums. The stage was my home, and I couldn't imagine doing anything else.",
+      "I started out as a musician \u2014 Jazz Guitar bachelor\u2019s and Music Pedagogy master\u2019s at ZHdK, then years of playing in various ensembles. Since 2023, I\u2019ve been with the Swiss band Halunke, alongside other projects, choirs, and sideman gigs.",
     "about.p2":
       "Then 2020 happened. When COVID brought the live music scene to a standstill, everything vanished practically overnight \u2014 gigs, tours, income. Instead of waiting it out, I started teaching myself software development. What began with online tutorials and small projects quickly turned into a genuine passion.",
     "about.p3":
-      "Together with a partner, I co-founded Morntag, a web development agency. We built websites and digital products for businesses of all sizes. Working with different clients taught me not just the craft, but how to turn ideas into working products.",
+      "Since 2022, I\u2019ve been a co-owner of morntag, a content-first agency based in Brugg. We help publishers and businesses with WordPress solutions, webshops, and multi-channel publishing \u2014 getting the right content to the right audience at the right time.",
     "about.p4":
       "Drawing from my own experience as a music teacher, I created Eleno \u2014 a SaaS platform that helps music teachers plan and manage their lessons. What started as a personal problem became a product used by teachers across Switzerland today.",
     "about.p5":
-      "Today I work at the intersection of technology and creativity. Whether at Morntag, Eleno, or side projects like Pressdify \u2014 I build things that help people in their daily lives. Music remains a part of who I am, but code is my new stage.",
+      "Today I split my time between code and music, between agency work and the stage. I build digital products that help people in their daily lives \u2014 and still play gigs in the evenings.",
 
     // Phase 3: Footer additions
     "footer.email.label": "Email",
