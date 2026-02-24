@@ -22,14 +22,14 @@ export const ui = {
     "theme.toggle": "Farbschema wechseln",
     "lang.switch": "Sprache wechseln",
     "site.title": "Brian Boy",
-    "site.description": "Tech-Unternehmer und Musiker",
+    "site.description": "Web-Entwickler & Musiker aus der Schweiz. Mitinhaber von morntag, Gruender von Eleno.",
     "hero.greeting": "Hallo, ich bin",
-    "hero.tagline": "Tech-Unternehmer & Musiker",
+    "hero.tagline": "Web-Entwickler & Musiker",
     "footer.rights": "Alle Rechte vorbehalten.",
 
     // Phase 3: Hero section
     "hero.intro":
-      "Tech-Unternehmer und Musiker aus der Schweiz. Ich baue digitale Produkte, die Menschen im Alltag helfen \u2014 von Webanwendungen bis hin zu SaaS-Plattformen.",
+      "Software Developer und Musiker aus der Schweiz. Ich baue digitale Produkte, die Menschen im Alltag helfen \u2014 von Webanwendungen bis hin zu SaaS-Plattformen.",
     "hero.cta": "Kontakt aufnehmen",
 
     // Phase 3: Work section
@@ -53,7 +53,7 @@ export const ui = {
     // Phase 3: About page
     "about.title": "\u00DCber mich",
     "about.meta":
-      "Brian Boy \u2014 Musiker und Tech-Unternehmer. Die Geschichte hinter morntag, Eleno und pressdify.",
+      "Brian Boy \u2014 Musiker und Software Developer. Die Geschichte hinter morntag, Eleno und pressdify.",
     "about.p1":
       "Angefangen hat alles mit der Musik \u2014 Jazzgitarre-Bachelorstudium und Master in Musikp\u00E4dagogik an der ZHdK, dann Jahre als Berufsmusiker in verschiedenen Formationen. Seit 2023 spiele ich bei der Schweizer Band Halunke, daneben bei weiteren Projekten, Ch\u00F6ren und als Sideman.",
     "about.p2":
@@ -67,6 +67,11 @@ export const ui = {
 
     // Phase 3: Footer additions
     "footer.email.label": "E-Mail",
+
+    // Phase 4: SEO metadata
+    "seo.home.title": "Brian Boy | Software Developer & Musiker",
+    "seo.about.title": "Uber mich — Brian Boy | Software Developer & Musiker",
+    "seo.about.description": "Vom Musiker zum Software Developer — die Geschichte hinter morntag, Eleno und pressdify.",
   },
   en: {
     "nav.home": "Home",
@@ -75,14 +80,14 @@ export const ui = {
     "theme.toggle": "Toggle theme",
     "lang.switch": "Switch language",
     "site.title": "Brian Boy",
-    "site.description": "Tech entrepreneur and musician",
+    "site.description": "Software Developer & Musician from Switzerland. Co-owner of morntag, founder of Eleno.",
     "hero.greeting": "Hi, I'm",
-    "hero.tagline": "Tech Entrepreneur & Musician",
+    "hero.tagline": "Software Developer & Musician",
     "footer.rights": "All rights reserved.",
 
     // Phase 3: Hero section
     "hero.intro":
-      "Tech entrepreneur and musician from Switzerland. I build digital products that make people's lives easier \u2014 from web applications to SaaS platforms.",
+      "Software developer and musician from Switzerland. I build digital products that make people's lives easier \u2014 from web applications to SaaS platforms.",
     "hero.cta": "Get in touch",
 
     // Phase 3: Work section
@@ -106,7 +111,7 @@ export const ui = {
     // Phase 3: About page
     "about.title": "About",
     "about.meta":
-      "Brian Boy \u2014 musician and tech entrepreneur. The story behind morntag, Eleno, and pressdify.",
+      "Brian Boy \u2014 musician and software developer. The story behind morntag, Eleno, and pressdify.",
     "about.p1":
       "I started out as a musician \u2014 Jazz Guitar bachelor\u2019s and Music Pedagogy master\u2019s at ZHdK, then years of playing in various ensembles. Since 2023, I\u2019ve been with the Swiss band Halunke, alongside other projects, choirs, and sideman gigs.",
     "about.p2":
@@ -120,6 +125,11 @@ export const ui = {
 
     // Phase 3: Footer additions
     "footer.email.label": "Email",
+
+    // Phase 4: SEO metadata
+    "seo.home.title": "Brian Boy | Software Developer & Musician",
+    "seo.about.title": "About — Brian Boy | Software Developer & Musician",
+    "seo.about.description": "From musician to software developer — the story behind morntag, Eleno, and pressdify.",
   },
 } as const;
 
