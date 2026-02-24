@@ -108,7 +108,7 @@
 | REQ-014 | Phase 2 | Complete |
 | REQ-015 | Phase 2 | Complete |
 | REQ-016 | Phase 2 | Complete |
-| REQ-017 | Phase 4 | Pending |
+| REQ-017 | Phase 4 | Complete |
 | REQ-T01 | Phase 1 | Complete |
 | REQ-T02 | Phase 1 | Complete |
 | REQ-T03 | Phase 1 | Complete |

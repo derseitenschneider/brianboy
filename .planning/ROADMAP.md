@@ -13,7 +13,7 @@ This roadmap delivers a bilingual personal portfolio website in 4 phases. We sta
 - [x] **Phase 1: Foundation + Core Systems** - Astro/Tailwind setup, theme toggle, i18n routing
 - [x] **Phase 2: Layout + Design** - Responsive layout, typography, design tokens, animations
 - [x] **Phase 3: Content** - Homepage, About page, all sections in both languages (completed 2026-02-18)
-- [ ] **Phase 4: SEO + Deployment** - Meta tags, structured data, GitHub Actions, FTP deploy
+- [x] **Phase 4: SEO + Deployment** - Meta tags, structured data, GitHub Actions, FTP deploy
 
 ## Phase Details
 
@@ -64,9 +64,9 @@ Plans:
 **Plans**: 3 plans in 2 waves (03-01 sequential, 03-02 + 03-03 parallel)
 
 Plans:
-- [ ] 03-01-PLAN.md — Translation strings, Hero component, WorkSection component, homepage rewrite
-- [ ] 03-02-PLAN.md — About page with flowing bio narrative in both languages
-- [ ] 03-03-PLAN.md — Footer social icon links and email mailto
+- [x] 03-01-PLAN.md — Translation strings, Hero component, WorkSection component, homepage rewrite
+- [x] 03-02-PLAN.md — About page with flowing bio narrative in both languages
+- [x] 03-03-PLAN.md — Footer social icon links and email mailto
 
 ### Phase 4: SEO + Deployment
 **Goal**: Production-ready site with proper SEO and automated deployment
@@ -82,9 +82,9 @@ Plans:
 **Plans**: 3 plans in 1 wave (all parallel)
 
 Plans:
-- [ ] 04-01-PLAN.md — SEO metadata: OG tags, hreflang, canonical, JSON-LD, identity update
-- [ ] 04-02-PLAN.md — Sitemap i18n configuration and robots.txt
-- [ ] 04-03-PLAN.md — GitHub Actions + FTP deployment pipeline
+- [x] 04-01-PLAN.md — SEO metadata: OG tags, hreflang, canonical, JSON-LD, identity update
+- [x] 04-02-PLAN.md — Sitemap i18n configuration and robots.txt
+- [x] 04-03-PLAN.md — GitHub Actions + FTP deployment pipeline
 
 ## Progress
 
@@ -95,5 +95,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 |-------|----------------|--------|-----------|
 | 1. Foundation + Core Systems | 3/3 | Complete | 2026-01-28 |
 | 2. Layout + Design | 2/2 | Complete | 2026-01-28 |
-| 3. Content | 0/3 | Complete    | 2026-02-18 |
-| 4. SEO + Deployment | 0/3 | Not started | - |
+| 3. Content | 3/3 | Complete | 2026-02-18 |
+| 4. SEO + Deployment | 3/3 | Complete | 2026-02-24 |
