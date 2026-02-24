@@ -97,5 +97,15 @@ const personSchema = {
       <slot />
     </main>
     <Footer />
+    <script>
+      document.querySelectorAll<HTMLAnchorElement>('.js-mail').forEach((el) => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          const u = el.dataset.u;
+          const d = el.dataset.d;
+          if (u && d) window.location.href = 'mail' + 'to:' + u + '@' + d;
+        });
+      });
+    </script>
   </body>
 </html>
