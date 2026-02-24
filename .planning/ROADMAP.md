@@ -79,12 +79,12 @@ Plans:
   4. Sitemap.xml is generated with all pages
   5. Push to main triggers GitHub Actions deploy to Hostpoint via FTP
   6. Page loads with LCP under 3 seconds
-**Plans**: TBD
+**Plans**: 3 plans in 1 wave (all parallel)
 
 Plans:
-- [ ] 04-01: Meta tags, OpenGraph, hreflang implementation
-- [ ] 04-02: JSON-LD schema and sitemap
-- [ ] 04-03: GitHub Actions + FTP deployment pipeline
+- [ ] 04-01-PLAN.md — SEO metadata: OG tags, hreflang, canonical, JSON-LD, identity update
+- [ ] 04-02-PLAN.md — Sitemap i18n configuration and robots.txt
+- [ ] 04-03-PLAN.md — GitHub Actions + FTP deployment pipeline
 
 ## Progress
 
