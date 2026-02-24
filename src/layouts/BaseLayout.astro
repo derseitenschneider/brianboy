@@ -11,16 +11,42 @@ import "../styles/global.css";
 import ThemeScript from "../components/ThemeScript.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import { getLangFromUrl } from "../i18n/ui";
+import { getLangFromUrl, getLocalizedPath } from "../i18n/ui";
 
 interface Props {
   title: string;
-  description?: string;
+  description: string;
 }
 
 const { title, description } = Astro.props;
 
 const lang = getLangFromUrl(Astro.url);
+const currentPath = Astro.url.pathname;
+const alternateLang = lang === "de" ? "en" : "de";
+const canonicalUrl = new URL(currentPath, Astro.site).href;
+const alternateUrl = new URL(getLocalizedPath(alternateLang, currentPath), Astro.site).href;
+const deUrl = lang === "de" ? canonicalUrl : alternateUrl;
+const enUrl = lang === "en" ? canonicalUrl : alternateUrl;
+const ogImageUrl = new URL("/og-image.jpg", Astro.site).href;
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Brian Boy",
+  "url": "https://brianboy.ch",
+  "image": ogImageUrl,
+  "jobTitle": "Software Developer & Musician",
+  "worksFor": [
+    { "@type": "Organization", "name": "morntag", "url": "https://morntag.com" },
+    { "@type": "Organization", "name": "Eleno", "url": "https://eleno.net" }
+  ],
+  "sameAs": [
+    "https://github.com/brianboy",
+    "https://linkedin.com/in/brianboy",
+    "https://x.com/brianboy",
+    "https://instagram.com/brianboy"
+  ]
+};
 ---
 
 <!doctype html>
@@ -29,14 +55,40 @@ const lang = getLangFromUrl(Astro.url);
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Primary Meta -->
     <title>{title}</title>
-    {description && <meta name="description" content={description} />}
+    <meta name="description" content={description} />
+
+    <!-- Canonical & Hreflang -->
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" hreflang="de" href={deUrl} />
+    <link rel="alternate" hreflang="en" href={enUrl} />
+    <link rel="alternate" hreflang="x-default" href={deUrl} />
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:site_name" content="Brian Boy" />
+    <meta property="og:locale" content={lang === "de" ? "de_CH" : "en"} />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
+
+    <!-- JSON-LD Person -->
+    <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&display=swap" rel="stylesheet" />
+
     <ThemeScript />
   </head>
   <body class="flex flex-col min-h-screen bg-cream dark:bg-warm-950 text-ink dark:text-warm-200 font-sans">

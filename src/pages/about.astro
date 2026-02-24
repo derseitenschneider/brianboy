@@ -14,7 +14,7 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<BaseLayout title={`${t("about.title")} — Brian Boy`} description={t("about.meta")}>
+<BaseLayout title={t("seo.about.title")} description={t("seo.about.description")}>
   <article class="max-w-3xl mx-auto px-6 lg:px-8 pt-16 md:pt-24 pb-20 md:pb-32">
     <div class="flex flex-col items-center mb-16 animate-fade-up">
       <div class="relative">
