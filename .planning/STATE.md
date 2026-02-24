@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-01-28)
 
 **Core value:** When someone searches "Brian Boy" they immediately understand who he is and feel confident reaching out
-**Current focus:** Phase 3 - Content (IN PROGRESS)
+**Current focus:** Phase 4 - SEO + Deploy (IN PROGRESS)
 
 ## Current Position
 
-Phase: 3 of 4 (Content)
-Plan: 3 of 3 in current phase
-Status: Phase 3 complete
-Last activity: 2026-02-18 — Completed 03-03-PLAN.md (Footer Social Links)
+Phase: 4 of 4 (SEO + Deploy)
+Plan: 2 of 3 in current phase
+Status: Executing phase 4
+Last activity: 2026-02-24 — Completed 04-02-PLAN.md (Sitemap & Robots.txt)
 
-Progress: [████████░░] 82%
+Progress: [█████████░] 91%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 8
-- Average duration: 2.1 min
-- Total execution time: 17 min
+- Total plans completed: 9
+- Average duration: 1.9 min
+- Total execution time: 17.5 min
 
 **By Phase:**
 
@@ -30,7 +30,7 @@ Progress: [████████░░] 82%
 | 1. Foundation | 3/3 | 8 min | 2.7 min |
 | 2. Layout | 2/2 | 5 min | 2.5 min |
 | 3. Content | 3/3 | 4 min | 1.3 min |
-| 4. SEO + Deploy | 0/3 | - | - |
+| 4. SEO + Deploy | 1/3 | 0.5 min | 0.5 min |
 
 **Recent Trend:**
 - Last 5 plans: 2 min, 3 min, 2 min, 3 min, 2 min
@@ -39,6 +39,7 @@ Progress: [████████░░] 82%
 *Updated after each plan completion*
 | Phase 03 P02 | 1min | 1 tasks | 2 files |
 | Phase 03 P03 | 1 | 1 tasks | 1 files |
+| Phase 04 P02 | 0.5min | 1 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -74,6 +75,8 @@ Recent decisions affecting current work:
 - [03-03]: Inline SVG icons with fill=currentColor for automatic dark mode support
 - [Phase 03-02]: Headshot centered at top of article with mb-12 spacing before narrative
 - [Phase 03-02]: Manual text-lg leading-relaxed styling instead of @tailwindcss/typography prose
+- [04-02]: de-CH hreflang locale for Swiss German in sitemap
+- [04-02]: sitemap-index.xml referenced in robots.txt (@astrojs/sitemap default output)
 
 ### Pending Todos
 
@@ -85,6 +88,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-18 11:56
-Stopped at: Completed 03-03-PLAN.md (Footer Social Links) — Phase 3 complete
-Resume file: None - ready for Phase 4 (SEO + Deploy)
+Last session: 2026-02-24 20:05
+Stopped at: Completed 04-02-PLAN.md (Sitemap & Robots.txt)
+Resume file: None - continue with 04-03-PLAN.md
