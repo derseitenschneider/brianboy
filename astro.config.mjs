@@ -5,7 +5,17 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   site: "https://brianboy.ch",
   output: "static",
-  integrations: [sitemap()],
+  integrations: [
+    sitemap({
+      i18n: {
+        defaultLocale: "de",
+        locales: {
+          de: "de-CH",
+          en: "en",
+        },
+      },
+    }),
+  ],
   i18n: {
     defaultLocale: "de",
     locales: ["de", "en"],
