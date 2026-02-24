@@ -22,9 +22,9 @@ export const ui = {
     "theme.toggle": "Farbschema wechseln",
     "lang.switch": "Sprache wechseln",
     "site.title": "Brian Boy",
-    "site.description": "Web-Entwickler & Musiker aus der Schweiz. Mitinhaber von morntag, Gruender von Eleno.",
+    "site.description": "Software Developer & Musiker aus der Schweiz. Mitinhaber von morntag, Gruender von Eleno.",
     "hero.greeting": "Hallo, ich bin",
-    "hero.tagline": "Web-Entwickler & Musiker",
+    "hero.tagline": "Software Developer & Musiker",
     "footer.rights": "Alle Rechte vorbehalten.",
 
     // Phase 3: Hero section
