@@ -12,7 +12,7 @@ See: .planning/PROJECT.md (updated 2026-01-28)
 Phase: 4 of 4 (SEO + Deploy)
 Plan: 2 of 3 in current phase
 Status: Executing phase 4
-Last activity: 2026-02-24 — Completed 04-02-PLAN.md (Sitemap & Robots.txt)
+Last activity: 2026-02-24 — Completed 04-01-PLAN.md (SEO Metadata)
 
 Progress: [█████████░] 91%
 
@@ -39,6 +39,7 @@ Progress: [█████████░] 91%
 *Updated after each plan completion*
 | Phase 03 P02 | 1min | 1 tasks | 2 files |
 | Phase 03 P03 | 1 | 1 tasks | 1 files |
+| Phase 04 P01 | 4min | 2 tasks | 8 files |
 | Phase 04 P02 | 0.5min | 1 tasks | 2 files |
 
 ## Accumulated Context
@@ -75,6 +76,9 @@ Recent decisions affecting current work:
 - [03-03]: Inline SVG icons with fill=currentColor for automatic dark mode support
 - [Phase 03-02]: Headshot centered at top of article with mb-12 spacing before narrative
 - [Phase 03-02]: Manual text-lg leading-relaxed styling instead of @tailwindcss/typography prose
+- [04-01]: Software Developer as brand identity term in both DE and EN (not Web-Entwickler)
+- [04-01]: x-default hreflang points to German root as default locale
+- [04-01]: JSON-LD sameAs URLs are placeholders pending user update
 - [04-02]: de-CH hreflang locale for Swiss German in sitemap
 - [04-02]: sitemap-index.xml referenced in robots.txt (@astrojs/sitemap default output)
 
@@ -88,6 +92,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-24 20:05
-Stopped at: Completed 04-02-PLAN.md (Sitemap & Robots.txt)
-Resume file: None - continue with 04-03-PLAN.md
+Last session: 2026-02-24 20:10
+Stopped at: Completed 04-01-PLAN.md (SEO Metadata)
+Resume file: None - continue with remaining Phase 4 plans
